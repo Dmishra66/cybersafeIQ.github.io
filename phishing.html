@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image: url("C:/Users/Admin/Downloads/cs.jpg");
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("C:/Users/Admin/Downloads/pngtree.jpg");
+  color: whitesmoke;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: lightgrey;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: silver;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: grey;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>PHISHING</h1>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="aboutus.html" style="float:right">About US</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Phishing</h2>
+      <div class="fakeimg" style="height:200px;"><img src="C:/Users/Admin/Downloads/webimph.jpg"></div>
+      <p>Phishing is a form of social engineering and scam where attackers deceive people into revealing sensitive information or installing malware such as ransomware. Phishing attacks have become increasingly sophisticated and often transparently mirror the site being targeted, allowing the attacker to observe everything while the victim is navigating the site, and transverse any additional security boundaries with the victim.</p>
+    </div>
+    <div class="card">
+      <h2>Types</h2>
+      <h3># Email Phishing</h3>
+    <p>Phishing attacks, often delivered via email spam, attempt to trick individuals into giving away sensitive information or login credentials. Most attacks are "bulk attacks" that are not targeted and are instead sent in bulk to a wide audience. The goal of the attacker can vary, with common targets including financial institutions, email and cloud productivity providers, and streaming services. The stolen information or access may be used to steal money, install malware, or spear phish others within the target organization.Compromised streaming service accounts may also be sold on darknet markets.</p>
+    <p>This type of social engineering attack can involve sending fraud emails or messages that appear to be from a trusted source, such as a bank or government agency. These messages typically redirect to a fake login page where the user is prompted to enter their login credentials.</p>
+    <h3># Spear phishing</h3>
+    <p>Spear phishing is a targeted phishing attack that uses personalized emails to trick a specific individual or organization into believing they are legitimate. It often utilizes personal information about the target to increase the chances of success. These attacks often target executives or those in financial departments with access to sensitive financial data and services. Accountancy and audit firms are particularly vulnerable to spear phishing due to the value of the information their employees have access to</p>
+    <h3># Voice phishing</h3>
+    <p>In vishing or voice phishing attacks, where attackers make automated phone calls to large numbers of people, often using text-to-speech synthesizers, claiming fraudulent activity on their accounts. The attackers spoof the calling phone number to appear as if it is coming from a legitimate bank or institution. The victim is then prompted to enter sensitive information or connected to a live person who uses social engineering tactics to obtain information.Vishing takes advantage of the public's lower awareness and trust in voice telephony compared to email phishing.</p>
+    <h3># SMS phishing</h3>
+    <p>SMS phishing or smishing is a type of phishing attack that uses text messages from a cell phone or smartphone to deliver a bait message. The victim is usually asked to click a link, call a phone number, or contact an email address provided by the attacker. They may then be asked to provide private information, such as login credentials for other websites. The difficulty in identifying illegitimate links can be compounded on mobile devices due to the limited display of URLs in mobile browsers. Smishing can be just as effective as email phishing, as many smartphones have fast internet connectivity. Smishing messages may also come from unusual phone numbers.</p>
+    <h3># Calendar phishing</h3>
+    <p>Calendar phishing involves sending fake calendar invitations with phishing links. These invitations often mimic common event requests and can easily be added to calendars automatically. To protect against this form of fraud, former Google click fraud czar Shuman Ghosemajumder recommends changing calendar settings to not automatically add new invitations.</p>
+    <h3># Clone phishing</h3>
+    <p>Clone phishing is a type of attack where a legitimate email with an attachment or link is copied and modified to contain malicious content. The modified email is then sent from a fake address made to look like it's from the original sender. The attack may appear to be a resend or update of the original email. It often relies on the sender or recipient being previously hacked so the attacker can access the legitimate email.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Techniques</h2>
+      <p>There are some techniques that are used for phishing:</p>
+      <div class="fakeimg" style="height:200px;"><img src="C:/Users/Admin/Downloads/img_quiz.png"></div>
+<ul>
+  <li>Link manipulation</li>
+  <li>Social engineering</li>
+  <li>Filter evasion</li>
+</ul>  
+
+    </div>
+    <div class="card">
+      <h3>Popular sites</h3>
+      <div ><img src="C:/Users/Admin/Downloads/closed padlock.jpg" style="width:250px;height:250px;"><p>living security</p></div>
+      <div><p>w3 schools</p></div>
+      <div><p>geeks for geeks</p></div>
+    </div>
+    <div class="card">
+      <img src="C:/Users/Admin/Downloads/cyber green.jpg" style="width:100px;height:100px;"> 
+      <h3>Follow us</h3>
+      <p> on linkedin</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Let's take one step towards cyber security</h2>
+</div>
+
+</body>
+</html>
+
+
